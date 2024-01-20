@@ -1,33 +1,23 @@
-using ConsoleEngine;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.EventSystems;
+using ConsoleEngine;
 
 namespace ConsoleEditor
 {
     [CustomEditor(typeof(Console), true)]
     public class ConsoleEditor : WindowEditor
     {
-        private int m_toolBar;
-        private GUIContent[] m_toolBarContent;
         private Console m_console;
 
         protected bool m_iconTab;
         protected bool m_consoleTab;
         protected bool m_consoleRenderTab;
-        protected bool m_consoleCommandTab;
 
         protected override void OnEnable()
         {
             base.OnEnable();
 
             m_console = (Console)m_target;
-            m_toolBarContent = new GUIContent[2];
-            m_toolBarContent[0] = EditorGUIUtility.IconContent("Canvas Icon");
-            m_toolBarContent[1] = EditorGUIUtility.IconContent("d_winbtn_win_max@2x");
-            //m_toolBarContent[1] = EditorGUIUtility.IconContent("d_UnityEditor.ConsoleWindow@x2");
         }
 
         public override void OnInspectorGUI()
@@ -45,7 +35,6 @@ namespace ConsoleEditor
                 EditorGUILayout.PropertyField(serializedObject.FindProperty("time"));
                 EditorGUILayout.PropertyField(serializedObject.FindProperty("collapse"));
                 EditorGUILayout.PropertyField(serializedObject.FindProperty("useIcons"));
-                EditorGUILayout.PropertyField(serializedObject.FindProperty("textMaxLength"));
             });
 
             Tab(ref m_consoleRenderTab, "Console Render", () =>
@@ -62,10 +51,6 @@ namespace ConsoleEditor
                 EditorGUILayout.PropertyField(serializedObject.FindProperty("m_scrollColor"));
                 EditorGUILayout.PropertyField(serializedObject.FindProperty("m_textAreaColor"));
                 EditorGUILayout.PropertyField(serializedObject.FindProperty("m_textFieldColor"));
-            });
-
-            Tab(ref m_consoleCommandTab, "Console Commands", () => {
-                EditorGUILayout.PropertyField(serializedObject.FindProperty("commands"));
             });
 
             DrawButtons();

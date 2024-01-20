@@ -57,15 +57,13 @@ MonoBehaviour:
   resizeIcon: {fileID: 2800000, guid: 00e661a91defdd647b97477250260ed3, type: 3}
   drag: 1
   resize: 1
+  clamp: 1
   color: {r: 0.7169812, g: 0.7169812, b: 0.7169812, a: 1}
   opacity: 1
   m_skin: {fileID: 11400000, guid: 713027166c351a94581c0fae6f9d121a, type: 2}
   time: 1
   collapse: 1
   useIcons: 1
-  m_infoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  m_warningColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  m_errorColor: {r: 1, g: 0, b: 0, a: 1}
   m_timeIcon: {fileID: 2800000, guid: d2a94d615b11b3d4086e28a5719bcdb8, type: 3}
   m_scaleIcon: {fileID: 0}
   m_infoIcon: {fileID: 2800000, guid: 21d80f4a65b10dd49bfd184012fb19ae, type: 3}

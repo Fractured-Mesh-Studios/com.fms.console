@@ -16,12 +16,6 @@ namespace ConsoleEngine
         [HideInInspector] public bool time;
         [HideInInspector] public bool collapse = true;
         [HideInInspector] public bool useIcons = true;
-        [HideInInspector] public int textMaxLength = 100;
-        [HideInInspector] public List<ConsoleCommand> commands = new List<ConsoleCommand>();
-
-        [SerializeField, HideInInspector] private Color m_infoColor = Color.grey;
-        [SerializeField, HideInInspector] private Color m_warningColor = Color.yellow;
-        [SerializeField, HideInInspector] private Color m_errorColor = Color.red;
 
         [SerializeField, HideInInspector] private Texture2D m_timeIcon;
         [SerializeField, HideInInspector] private Texture2D m_scaleIcon;
@@ -40,10 +34,9 @@ namespace ConsoleEngine
 
         private Vector2 m_scroll;
         private int m_filterState = 0;
-        private bool m_info = true, m_warning = true, m_error = true;
-        private string m_commandText = string.Empty;
-        private GUIStyle m_style;
-        private GUILayoutOption m_layoutOption;
+        private bool m_info = true;
+        private bool m_warning = true;
+        private bool m_error = true;
 
         #region UNITY
         protected override void OnEnable()
@@ -140,21 +133,7 @@ namespace ConsoleEngine
 
         protected virtual void OnFooter()
         {
-            m_layoutOption = GUILayout.MaxWidth(80);
-            m_style = new GUIStyle(GUI.skin.button);
-            m_style.alignment = TextAnchor.MiddleCenter;
-
-            /*GUILayout.BeginHorizontal();
-            if(m_commandText.Length > textMaxLength)
-            {
-                m_commandText = GUILayout.TextField(m_commandText, textMaxLength);
-            }
-            else
-            {
-                m_commandText = GUILayout.TextField(m_commandText);
-            }
-            if (GUILayout.Button("Send", m_style, m_layoutOption)) { SendCommand(m_commandText); }
-            GUILayout.EndHorizontal();*/
+            
         }
 
         private ConsoleData DrawLog(ConsoleData data, bool useIcon = false)
