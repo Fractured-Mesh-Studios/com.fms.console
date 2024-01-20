@@ -16,7 +16,7 @@ namespace ConsoleEngine
         [HideInInspector] public bool time;
         [HideInInspector] public bool collapse = true;
         [HideInInspector] public bool useIcons = true;
-        [HideInInspector] public int textMaxLength = 50;
+        [HideInInspector] public int textMaxLength = 100;
         [HideInInspector] public List<ConsoleCommand> commands = new List<ConsoleCommand>();
 
         [SerializeField, HideInInspector] private Color m_infoColor = Color.grey;

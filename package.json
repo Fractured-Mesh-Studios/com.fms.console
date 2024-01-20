@@ -1,23 +1,17 @@
 {
-  "name": "com.fms.controller",
-  "displayName": "Character Controller",
-  "version": "0.0.4",
+  "name": "com.fms.console",
+  "displayName": "InGame Console",
+  "version": "0.0.1",
   "unity": "2019.4",
-  "description": "Author: Jorge Nahuel Gerones\nPhysics based character controller for proyects. \n\nRuntime and editor custom scripts",
+  "description": "Author: Jorge Nahuel Gerones\nInGame Runtime IMGUI Console \n\nRuntime and editor custom scripts",
   "keywords": [
-    "physics",
-    "controller",
-    "character",
-    "fps",
-    "tps",
-    "plataform",
-    "orbit",
-    "cutscene"
+    "console",
+    "runtime",
+    "testing",
+    "imgui",
+    "plataform"
   ],
-  "category": "physics",
-  "dependencies": {
-    "com.unity.inputsystem": "1.0.0"
-  },
+  "category": "ui",
   "documentationUrl": "no url data",
   "repository": {
     "url": "--",
