@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4058206714534916838
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9217983360794068960}
+  - component: {fileID: 2368705932557971905}
+  m_Layer: 5
+  m_Name: Console
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9217983360794068960
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4058206714534916838}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12.836366, y: -1.2197143, z: 16.541363}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2368705932557971905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4058206714534916838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f9a4edf8f42abb4ebe2564969456bed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rect:
+    serializedVersion: 2
+    x: 92.5
+    y: 32.499996
+    width: 800
+    height: 500
+  dragSize: {x: 800, y: 20}
+  title: Console
+  tooltip: InGame Debug Console
+  icon: {fileID: 2800000, guid: b22736d13f1c3074e9fe1695e6475ebe, type: 3}
+  resizeIcon: {fileID: 2800000, guid: 00e661a91defdd647b97477250260ed3, type: 3}
+  drag: 1
+  resize: 1
+  color: {r: 0.7169812, g: 0.7169812, b: 0.7169812, a: 1}
+  opacity: 1
+  m_skin: {fileID: 11400000, guid: 713027166c351a94581c0fae6f9d121a, type: 2}
+  time: 1
+  collapse: 1
+  useIcons: 1
+  m_infoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_warningColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  m_errorColor: {r: 1, g: 0, b: 0, a: 1}
+  m_timeIcon: {fileID: 2800000, guid: d2a94d615b11b3d4086e28a5719bcdb8, type: 3}
+  m_scaleIcon: {fileID: 0}
+  m_infoIcon: {fileID: 2800000, guid: 21d80f4a65b10dd49bfd184012fb19ae, type: 3}
+  m_warningIcon: {fileID: 2800000, guid: a9ee82f5bc061f24b863537ff696b0bd, type: 3}
+  m_errorIcon: {fileID: 2800000, guid: f70ae4ed39290234ba9711cb6386623a, type: 3}
+  m_boxColor: {r: 0.3679245, g: 0.3679245, b: 0.3679245, a: 1}
+  m_buttonColor: {r: 0.745283, g: 0.745283, b: 0.745283, a: 1}
+  m_scrollColor: {r: 0.36862746, g: 0.36862746, b: 0.36862746, a: 1}
+  m_textAreaColor: {r: 0.754717, g: 0.7515019, b: 0.5724457, a: 0.5019608}
+  m_textFieldColor: {r: 1, g: 1, b: 1, a: 1}
